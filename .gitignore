@@ -1,0 +1,43 @@
+# Local environment files
+.env
+.env.*
+*.local
+
+# Terraform state and generated files
+*.tfstate
+*.tfstate.*
+.crash
+*.tfvars
+*.tfvars.json
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+.terraform/
+.terraform.lock.hcl
+terraform.tfplan
+
+# VS Code / editor files
+.vscode/
+*.swp
+*.swo
+*.tmp
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Sensitive or local output
+*.pem
+*.key
+id_rsa
+
+# Build/artifact output
+*.zip
+*.tar.gz
+
+# Crash / temp folders
+crash.log
