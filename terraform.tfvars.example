@@ -1,0 +1,12 @@
+# Copy this file to terraform.tfvars and replace the placeholder SSH key.
+# Keep actual private values out of Git.
+
+project_name = "webtier"
+location = "australiaeast"
+address_space = ["10.10.0.0/16"]
+subnet_address_prefixes = ["10.10.1.0/24"]
+vm_size = "Standard_B1s"
+instance_count = 2
+admin_username = "azureadmin"
+admin_ssh_public_key = "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC<replace-with-your-public-key>"
+repair_grace_period = "PT10M"

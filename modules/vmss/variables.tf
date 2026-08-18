@@ -14,6 +14,11 @@ variable "admin_username" {
   default     = "azureadmin"
 }
 
+variable "admin_ssh_public_key" {
+  description = "SSH public key used for Linux VMSS authentication. This must be a public key string and should be provided per environment."
+  type        = string
+}
+
 variable "location" {
   description = "Azure region for the VMSS."
   type        = string

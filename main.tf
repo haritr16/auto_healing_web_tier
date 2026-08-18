@@ -38,8 +38,10 @@ module "vmss" {
   backend_pool_id = module.load_balancer.backend_pool_id
   health_probe_id = module.load_balancer.health_probe_id
 
-  vm_size        = var.vm_size
-  instance_count = var.instance_count
+  admin_username       = var.admin_username
+  admin_ssh_public_key = var.admin_ssh_public_key
+  vm_size              = var.vm_size
+  instance_count       = var.instance_count
 
   repair_grace_period = var.repair_grace_period
 

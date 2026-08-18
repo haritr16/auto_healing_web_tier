@@ -45,6 +45,11 @@ variable "admin_username" {
   default     = "azureadmin"
 }
 
+variable "admin_ssh_public_key" {
+  description = "SSH public key used to access the Linux VMSS instances. Set this in terraform.tfvars or via TF_VAR_admin_ssh_public_key so the repo remains portable."
+  type        = string
+}
+
 variable "repair_grace_period" {
   description = "Grace period before automatic instance repair."
   type        = string
