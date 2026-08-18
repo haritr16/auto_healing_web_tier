@@ -8,6 +8,12 @@ variable "resource_group_name" {
   type        = string
 }
 
+variable "admin_username" {
+  description = "Administrator username required by the Azure Linux VMSS."
+  type        = string
+  default     = "azureadmin"
+}
+
 variable "location" {
   description = "Azure region for the VMSS."
   type        = string

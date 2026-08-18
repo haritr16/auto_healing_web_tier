@@ -6,6 +6,8 @@ resource "azurerm_linux_virtual_machine_scale_set" "web" {
   sku       = var.vm_size
   instances = var.instance_count
 
+  admin_username = var.admin_username
+
   upgrade_mode = "Rolling"
 
   source_image_reference {
