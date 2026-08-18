@@ -2,6 +2,12 @@
 
 Infrastructure provisioning for an auto-healing web tier on Azure using Terraform.
 
+## Architecture
+
+The following architecture implements a self-healing web tier on Microsoft Azure. Terraform provisions the infrastructure, while an Azure Load Balancer distributes traffic across multiple NGINX virtual machines to provide high availability and continued service if a VM becomes unavailable.
+
+![Azure Auto-Healing Web Tier Architecture](documents/Architecture.png)
+
 ## Overview
 
 This project provisions an auto-healing web tier consisting of:
