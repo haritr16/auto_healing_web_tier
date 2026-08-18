@@ -4,12 +4,6 @@ variable "project_name" {
   default     = "webtier"
 }
 
-variable "environment" {
-  description = "Deployment environment."
-  type        = string
-  default     = "dev"
-}
-
 variable "location" {
   description = "Azure region."
   type        = string
@@ -43,6 +37,12 @@ variable "instance_count" {
     condition     = var.instance_count >= 2
     error_message = "instance_count must be at least 2."
   }
+}
+
+variable "admin_username" {
+  description = "Administrator username for Linux VMSS instances."
+  type        = string
+  default     = "azureadmin"
 }
 
 variable "repair_grace_period" {
