@@ -16,6 +16,13 @@ resource "azurerm_linux_virtual_machine_scale_set" "web" {
 
   upgrade_mode = "Rolling"
 
+  rolling_upgrade_policy {
+    max_batch_instance_percent              = 20     # Updates 20% of VMs at a time
+    max_unhealthy_instance_percent          = 20     # Maximum allowed failed VMs during update
+    max_unhealthy_upgraded_instance_percent = 20     # Maximum allowed failed newly upgraded VMs
+    pause_time_between_batches              = "PT0S" # No pause between batches
+  }
+
   source_image_reference {
     publisher = "Canonical"
     offer     = "0001-com-ubuntu-server-jammy"
