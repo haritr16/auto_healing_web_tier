@@ -25,7 +25,7 @@ variable "subnet_address_prefixes" {
 variable "vm_size" {
   description = "Azure VM size for each VMSS instance."
   type        = string
-  default     = "Standard_B1s"
+  default     = "Standard_B1ls"
 }
 
 variable "instance_count" {

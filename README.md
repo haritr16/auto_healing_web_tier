@@ -1,4 +1,4 @@
-# auto_healing_web_tier
+# Auto_healing_web_tier
 
 Infrastructure provisioning for an auto-healing web tier on Azure using Terraform.
 
@@ -91,6 +91,8 @@ Destroy the infrastructure when no longer needed:
 ```bash
 terraform destroy
 ```
+
+## Azure monthly estimate
 
 ## Notes
 
