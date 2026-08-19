@@ -94,6 +94,8 @@ terraform destroy
 
 ## Azure monthly estimate
 
+![Monthly Estimate](/documents/AzureEstimate.png)
+
 ## Notes
 
 - The example file [terraform.tfvars.example](terraform.tfvars.example) is safe to commit because it contains a placeholder only.
